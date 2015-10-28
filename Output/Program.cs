@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Task2;
+using Task3;
 
 namespace Output
 {
@@ -11,12 +12,8 @@ namespace Output
     {
         static void Main(string[] args)
         {
-            Finder finder = new Finder();
-            var list = finder.FindRecordWithExtension("2000");
-            foreach (var item in list)
-            {
-                Console.WriteLine(item);
-            }
+            var task3 = new Task3Library();
+            task3.CreateTextSettingDefinition();
             Console.WriteLine("DONE");
             Console.ReadLine();
         }
